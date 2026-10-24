@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tutor Profile - Tulernify Online Tutoring</title>
+  <meta name="description" content="View detailed tutor profile on Tulernify including expertise, experience, and student reviews.">
+  <meta name="keywords" content="tutor profile, tutoring, expert tutor">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Cyan and Deep Blue Theme (refined for contrast) -->
+  <style>
+    :root {
+      --primary-color: #0A0377;
+      --secondary-color: #00FFFF;
+      --accent-color: #00FFFF;        /* bright cyan used for accents */
+      --heading-color: #0A0377;       /* deep blue for headings */
+      --default-color: #0A0A1A;       /* darker text for readability */
+      --background-color: #F8FCFF;    /* very light blue background for subtle tint */
+      --surface-color: #FFFFFF;       /* white cards for clear contrast */
+      --contrast-color: #FFFFFF;      /* white text on bright accents for better contrast */
+      --nav-color: #0A0377;
+      --nav-hover-color: #00FFFF;
+      --nav-dropdown-color: #333333;
+      --nav-dropdown-hover-color: #00FFFF;
+      --nav-dropdown-background-color: #F8FCFF;
+      --nav-mobile-background-color: #FFFFFF;
+      --default-font: "Inter", sans-serif;
+      --heading-font: "Raleway", sans-serif;
+      --nav-font: "Open Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="tutor-profile-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="sitename">Tulernify</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tutors.html">Tutors</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h1 id="tutor-name">Tutor Profile</h1>
+              <p id="tutor-specialty">Loading tutor information...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutors.html">Tutors</a></li>
+            <li class="current" id="breadcrumb-name">Profile</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Tutor Profile Section -->
+    <section class="tutor-detail-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <!-- Profile Header -->
+            <div class="profile-header-card">
+              <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                  <div class="tutor-profile-image">
+                    <img id="tutor-image" src="assets/img/health/staff-1.webp" alt="Tutor" class="img-fluid rounded-circle">
+                    <div class="rating-overlay">
+                      <div class="rating-badge">
+                        <i class="bi bi-star-fill"></i>
+                        <span id="tutor-rating">4.9</span>/5
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="profile-info">
+                    <h2 id="profile-name">Tutor Name</h2>
+                    <p class="specialty-badge" id="profile-specialty">Subject Specialty</p>
+                    
+                    <div class="info-grid mt-4">
+                      <div class="info-item">
+                        <i class="bi bi-award"></i>
+                        <div>
+                          <h6>Experience</h6>
+                          <p id="profile-experience">15+ Years</p>
+                        </div>
+                      </div>
+                      <div class="info-item">
+                        <i class="bi bi-people"></i>
+                        <div>
+                          <h6>Students Taught</h6>
+                          <p id="profile-students">500+</p>
+                        </div>
+                      </div>
+                      <div class="info-item">
+                        <i class="bi bi-star"></i>
+                        <div>
+                          <h6>Average Rating</h6>
+                          <p id="profile-avg-rating">4.9/5</p>
+                        </div>
+                      </div>
+                      <div class="info-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <div>
+                          <h6>Location</h6>
+                          <p id="profile-location">New York, USA</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="profile-actions mt-4">
+                      <a href="appointment.html" class="btn btn-primary me-2">Book a Session</a>
+                      <a href="#!" id="whatsappBtn" class="btn btn-outline" target="_blank">Contact on WhatsApp</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile Details -->
+            <div class="profile-details mt-5">
+              <div class="row">
+                <div class="col-lg-8">
+                  
+                  <!-- About Section -->
+                  <div class="detail-section mb-5">
+                    <h3 class="section-title mb-3">About</h3>
+                    <p id="tutor-about" class="detail-text">
+                      Experienced and dedicated tutor passionate about helping students achieve their academic goals through personalized instruction and proven teaching methods.
+                    </p>
+                  </div>
+
+                  <!-- Expertise Section -->
+                  <div class="detail-section mb-5">
+                    <h3 class="section-title mb-3">Areas of Expertise</h3>
+                    <div class="expertise-tags" id="expertise-list" aria-label="Areas of expertise">
+                      <span class="expertise-tag"><i class="bi bi-lightning-charge-fill"></i> Mathematics</span>
+                      <span class="expertise-tag"><i class="bi bi-gear-fill"></i> Physics</span>
+                      <span class="expertise-tag"><i class="bi bi-mortarboard-fill"></i> Test Preparation</span>
+                    </div>
+                  </div>
+
+                  <!-- Qualifications Section -->
+                  <div class="detail-section mb-5">
+                    <h3 class="section-title mb-3">Qualifications</h3>
+                    <ul class="qualification-list" id="qualification-list">
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Master's Degree in Subject Specialization</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Certified Educator with 15+ years of experience</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Specialized training in student-centered learning</span>
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Proven track record of improving student performance</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Teaching Approach Section -->
+                  <div class="detail-section mb-5">
+                    <h3 class="section-title mb-3">Teaching Approach</h3>
+                    <p class="detail-text">
+                      I believe in adapting my teaching style to each student's unique learning needs. My approach combines:
+                    </p>
+                    <ul class="approach-list">
+                      <li><strong>Personalized Learning:</strong> Tailoring lessons to individual learning styles and pace</li>
+                      <li><strong>Interactive Sessions:</strong> Engaging discussions and problem-solving activities</li>
+                      <li><strong>Progress Tracking:</strong> Regular assessments to monitor improvement</li>
+                      <li><strong>Practical Applications:</strong> Real-world examples to enhance understanding</li>
+                    </ul>
+                  </div>
+
+                  <!-- Reviews Section -->
+                  <div class="detail-section">
+                    <h3 class="section-title mb-3">Student Reviews</h3>
+                    <div class="reviews-container">
+                      <div class="review-item">
+                        <div class="review-header">
+                          <div class="reviewer-info">
+                            <h6>Student Name</h6>
+                            <div class="review-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="review-text">
+                          "Excellent tutor! Made complex concepts easy to understand. My grades improved significantly within a few weeks of tutoring sessions."
+                        </p>
+                      </div>
+
+                      <div class="review-item">
+                        <div class="review-header">
+                          <div class="reviewer-info">
+                            <h6>Another Student</h6>
+                            <div class="review-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="review-text">
+                          "Very patient and knowledgeable. The personalized approach really helped me prepare for my exams. Highly recommend!"
+                        </p>
+                      </div>
+
+                      <div class="review-item">
+                        <div class="review-header">
+                          <div class="reviewer-info">
+                            <h6>Parent Feedback</h6>
+                            <div class="review-stars">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="review-text">
+                          "Our child's confidence and grades both improved dramatically. The tutor communicates progress regularly and adapts lessons as needed."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                  
+                  <!-- Quick Info Card -->
+                  <div class="info-card mb-4">
+                    <h5 class="card-title">Quick Info</h5>
+                    <div class="info-list">
+                      <div class="info-row">
+                        <span class="label">Availability:</span>
+                        <span class="value">Flexible Hours</span>
+                      </div>
+                      <div class="info-row">
+                        <span class="label">Session Duration:</span>
+                        <span class="value">30-120 minutes</span>
+                      </div>
+                      <div class="info-row">
+                        <span class="label">Response Time:</span>
+                        <span class="value">Within 24 hours</span>
+                      </div>
+                      <div class="info-row">
+                        <span class="label">Teaching Mode:</span>
+                        <span class="value">Online & In-person</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pricing Card -->
+                  <div class="info-card mb-4">
+                    <h5 class="card-title">Pricing</h5>
+                    <div class="pricing-info">
+                      <div class="price-item">
+                        <span class="duration">30 min session</span>
+                        <span class="price">$15</span>
+                      </div>
+                      <div class="price-item">
+                        <span class="duration">60 min session</span>
+                        <span class="price">$25</span>
+                      </div>
+                      <div class="price-item">
+                        <span class="duration">Monthly Package (8 hrs)</span>
+                        <span class="price">$150</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Call to Action -->
+                  <div class="cta-card" role="region" aria-labelledby="cta-heading">
+                    <h5 id="cta-heading">Ready to Start Learning?</h5>
+                    <p class="cta-sub">Personalized sessions, flexible scheduling, measurable progress.</p>
+                    <ul class="cta-benefits">
+                      <li>Customized lesson plans</li>
+                      <li>Progress tracking and feedback</li>
+                      
+                    </ul>
+                    <div class="d-grid gap-2">
+                      <a href="appointment.html" class="btn btn-primary btn-cta">Book Your Session</a>
+                    </div>
+                  </div>
+
+                  <!-- Back Button -->
+                  <div class="mt-3">
+                    <a href="tutors.html" class="btn btn-outline w-100">
+                      <i class="bi bi-arrow-left"></i> Back to Tutors
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer-16 footer position-relative">
+    <div class="container">
+      <div class="footer-main">
+        <div class="row align-items-start">
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="index.html" class="logo d-flex align-items-center mb-4">
+                <span class="sitename">Tulernify</span>
+              </a>
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>123 Creative Boulevard, Design District, NY 10012</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (555) 987-6543</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>hello@designstudio.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Platform</h6>
+                    <nav class="footer-nav">
+                      <a href="index.html">Home</a>
+                      <a href="tutors.html">Find Tutors</a>
+                      <a href="appointment.html">Book Session</a>
+                      <a href="about.html">About Us</a>
+                      <a href="faq.html">FAQ</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Subjects</h6>
+                    <nav class="footer-nav">
+                      <a href="#!">Mathematics</a>
+                      <a href="#!">Sciences</a>
+                      <a href="#!">Languages</a>
+                      <a href="#!">Test Prep</a>
+                      <a href="#!">Programming</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="#!">Learning Blog</a>
+                      <a href="#!">Study Tips</a>
+                      <a href="#!">Success Stories</a>
+                      <a href="#!">Testimonials</a>
+                      <a href="#!">Webinars</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Support</h6>
+                    <nav class="footer-nav">
+                      <a href="contact.html">Contact Us</a>
+                      <a href="#!">Help Center</a>
+                      <a href="privacy.html">Privacy Policy</a>
+                      <a href="terms.html">Terms of Service</a>
+                      <a href="#!">Feedback</a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>© <span class="sitename">Tulernify</span>. All rights reserved.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="#!">Cookie Policy</a>
+                <div class="credits">
+                  <p><strong>&copy; Tulernify 2024</strong> - Empowering Students Through Expert Online Tutoring</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Tutor Profile Script -->
+  <script>
+    // Tutor Database
+    const tutorDatabase = {
+      'marcus-johnson': {
+        name: 'Tulernify Staff',
+        specialty: 'Mathematics & Physics',
+        image: 'assets/img/health/staff-1.webp',
+        rating: 4.9,
+        experience: '5+ Years',
+        students: '500+',
+        location: 'Lagos, Nigeria',
+        whatsapp: '+2349068528018',
+        about: 'Highly experienced mathematics and physics tutor with a passion for making complex concepts accessible and engaging. I believe that every student can excel with the right guidance and approach.',
+        expertise: ['Algebra', 'Geometry', 'Calculus', 'Physics', 'SAT/ACT Prep'],
+        avgRating: '4.9/5'
+      },
+      'sarah-williams': {
+        name: 'Sarah Williams',
+        specialty: 'Biology & Chemistry',
+        image: 'assets/img/health/staff-2.webp',
+        rating: 4.8,
+        experience: '12+ Years',
+        students: '450+',
+        location: 'London, UK',
+        whatsapp: '+1234567891',
+        about: 'Dedicated science educator specializing in Biology and Chemistry. I use interactive methods to help students understand scientific principles and build confidence in laboratory work.',
+        expertise: ['Biology', 'Chemistry', 'Organic Chemistry', 'AP Sciences', 'MCAT Prep'],
+        avgRating: '4.8/5'
+      },
+      'michael-chen': {
+        name: 'Michael Chen',
+        specialty: 'English & Mandarin',
+        image: 'assets/img/health/staff-3.webp',
+        rating: 4.9,
+        experience: '18+ Years',
+        students: '600+',
+        location: 'Toronto, Canada',
+        whatsapp: '+1234567892',
+        about: 'Native Mandarin speaker with extensive experience in teaching both English and Mandarin Chinese. I focus on conversational fluency and cultural understanding.',
+        expertise: ['English Literature', 'Writing', 'Mandarin Chinese', 'TOEFL', 'HSK Preparation'],
+        avgRating: '4.9/5'
+      },
+      'emily-rodriguez': {
+        name: 'Emily Rodriguez',
+        specialty: 'JAMB & WAEC Prep',
+        image: 'assets/img/health/staff-4.webp',
+        rating: 4.9,
+        experience: '10+ Years',
+        students: '380+',
+        location: 'Lagos, Nigeria',
+        whatsapp: '+1234567893',
+        about: 'Specializing in test preparation for JAMB and WAEC exams with a proven track record of helping students achieve excellent scores.',
+        expertise: ['JAMB Mathematics', 'WAEC Preparation', 'English Language', 'Science Subjects'],
+        avgRating: '4.9/5'
+      },
+      'david-thompson': {
+        name: 'David Thompson',
+        specialty: 'History & Economics',
+        image: 'assets/img/health/staff-5.webp',
+        rating: 4.7,
+        experience: '14+ Years',
+        students: '420+',
+        location: 'Sydney, Australia',
+        whatsapp: '+1234567894',
+        about: 'Engaging history and economics tutor who brings subjects to life through real-world examples and analytical thinking. Strong focus on essay writing and critical analysis.',
+        expertise: ['World History', 'Economics', 'Essay Writing', 'AP Exams', 'Critical Analysis'],
+        avgRating: '4.7/5'
+      },
+      'lisa-anderson': {
+        name: 'Lisa Anderson',
+        specialty: 'Literature & Essay Writing',
+        image: 'assets/img/health/staff-6.webp',
+        rating: 4.8,
+        experience: '16+ Years',
+        students: '510+',
+        location: 'Chicago, USA',
+        whatsapp: '+1234567895',
+        about: 'Passionate literature tutor dedicated to helping students develop strong analytical and writing skills. Specialize in essay structure, thesis development, and literary analysis.',
+        expertise: ['Literary Analysis', 'Essay Writing', 'Classic Literature', 'Creative Writing', 'Standardized Tests'],
+        avgRating: '4.8/5'
+      },
+      'robert-martinez': {
+        name: 'Robert Martinez',
+        specialty: 'IT & Programming',
+        image: 'assets/img/health/staff-7.webp',
+        rating: 4.9,
+        experience: '11+ Years',
+        students: '470+',
+        location: 'Silicon Valley, USA',
+        whatsapp: '+1234567896',
+        about: 'Expert programmer and IT professional dedicated to teaching programming concepts, web development, and software engineering principles.',
+        expertise: ['Python', 'Java', 'JavaScript', 'Web Development', 'Data Structures'],
+        avgRating: '4.9/5'
+      },
+      'jennifer-lee': {
+        name: 'Jennifer Lee',
+        specialty: 'Visual Arts & Design',
+        image: 'assets/img/health/staff-8.webp',
+        rating: 4.8,
+        experience: '13+ Years',
+        students: '390+',
+        location: 'Vancouver, Canada',
+        whatsapp: '+1234567897',
+        about: 'Professional artist and design educator with expertise in teaching visual arts, design principles, and creative expression through various mediums.',
+        expertise: ['Drawing', 'Painting', 'Graphic Design', 'Digital Art', 'Art History'],
+        avgRating: '4.8/5'
+      },
+      'daniel-chen': {
+        name: 'Daniel Chen',
+        specialty: 'Computer Science & Python',
+        image: 'assets/img/health/staff-3.webp',
+        rating: 4.9,
+        experience: '8+ Years',
+        students: '420+',
+        location: 'Singapore',
+        whatsapp: '+1234567898',
+        about: 'Specialized in teaching Computer Science fundamentals and Python programming to students of all levels.',
+        expertise: ['Python', 'Computer Science', 'Algorithms', 'Data Science', 'Coding Interviews'],
+        avgRating: '4.9/5'
+      },
+      'emma-rodriguez': {
+        name: 'Emma Rodriguez',
+        specialty: 'History & Social Studies',
+        image: 'assets/img/health/staff-5.webp',
+        rating: 4.7,
+        experience: '14+ Years',
+        students: '480+',
+        location: 'Madrid, Spain',
+        whatsapp: '+1234567899',
+        about: 'Dedicated history educator making social studies engaging through discussion-based learning and primary source analysis.',
+        expertise: ['American History', 'World History', 'Social Studies', 'Civics', 'Research Skills'],
+        avgRating: '4.7/5'
+      },
+      'michael-thompson': {
+        name: 'Michael Thompson',
+        specialty: 'Economics & Business',
+        image: 'assets/img/health/staff-7.webp',
+        rating: 4.6,
+        experience: '18+ Years',
+        students: '550+',
+        location: 'Frankfurt, Germany',
+        whatsapp: '+1234567900',
+        about: 'Expert economics and business educator with real-world industry experience to share with students.',
+        expertise: ['Microeconomics', 'Macroeconomics', 'Business Strategy', 'Finance', 'Case Studies'],
+        avgRating: '4.6/5'
+      },
+      'sophia-martinez': {
+        name: 'Sophia Martinez',
+        specialty: 'Music Theory & Performance',
+        image: 'assets/img/health/staff-7.webp',
+        rating: 4.8,
+        experience: '16+ Years',
+        students: '340+',
+        location: 'Paris, France',
+        whatsapp: '+1234567901',
+        about: 'Professional musician and music educator specializing in music theory, composition, and performance technique.',
+        expertise: ['Music Theory', 'Piano', 'Violin', 'Composition', 'Music History'],
+        avgRating: '4.8/5'
+      }
+    };
+
+    // Get tutor ID from URL
+    function getTutorIdFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('id') || 'marcus-johnson';
+    }
+
+    // Load tutor profile
+    function loadTutorProfile() {
+      const tutorId = getTutorIdFromURL();
+      const tutor = tutorDatabase[tutorId];
+
+      if (!tutor) {
+        document.body.innerHTML = '<div class="container mt-5"><p>Tutor not found. <a href="tutors.html">Back to tutors</a></p></div>';
+        return;
+      }
+
+      // Update page title
+      document.getElementById('tutor-name').textContent = tutor.name;
+      document.getElementById('tutor-specialty').textContent = tutor.specialty;
+      document.getElementById('breadcrumb-name').textContent = tutor.name;
+
+      // Update profile image and rating
+      document.getElementById('tutor-image').src = tutor.image;
+      document.getElementById('tutor-rating').textContent = tutor.rating;
+
+      // Update profile information
+      document.getElementById('profile-name').textContent = tutor.name;
+      document.getElementById('profile-specialty').textContent = tutor.specialty;
+      document.getElementById('profile-experience').textContent = tutor.experience;
+      document.getElementById('profile-students').textContent = tutor.students;
+      document.getElementById('profile-avg-rating').textContent = tutor.avgRating;
+      document.getElementById('profile-location').textContent = tutor.location;
+      document.getElementById('tutor-about').textContent = tutor.about;
+
+      // Update expertise tags
+      const expertiseList = document.getElementById('expertise-list');
+      expertiseList.innerHTML = tutor.expertise.map(exp => `<span class="expertise-tag">${exp}</span>`).join('');
+
+      // Update browser title
+      document.title = `${tutor.name} - Tulernify Online Tutoring`;
+
+      // Setup WhatsApp button
+      const whatsappBtn = document.getElementById('whatsappBtn');
+      if (whatsappBtn && tutor.whatsapp) {
+        const message = `Hi ${tutor.name}! I'm interested in learning ${tutor.specialty}. Can we discuss your tutoring services?`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappNumber = tutor.whatsapp.replace(/[^\d]/g, ''); // Remove non-numeric characters
+        whatsappBtn.href = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+      }
+    }
+
+    // Load profile when page loads
+    document.addEventListener('DOMContentLoaded', loadTutorProfile);
+  </script>
+
+</body>
+
+</html>

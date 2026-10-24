@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Book a Session - Tulernify Online Tutoring</title>
+  <meta name="description" content="Schedule your tutoring session with Tulernify. Choose your tutor and preferred time.">
+  <meta name="keywords" content="book tutoring, schedule session, tutoring appointment">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Cyan and Deep Blue Theme -->
+    <style>
+      :root {
+        --primary-color: #0A0377;
+        --secondary-color: #00FFFF;
+        --accent-color: #00FFFF;
+        --heading-color: #0A0377;
+        --default-color: #0A0A1A;
+        --background-color: #F8FCFF;
+        --surface-color: #FFFFFF;
+        --contrast-color: #FFFFFF;
+        --nav-color: #0A0377;
+        --nav-hover-color: #00FFFF;
+        --nav-dropdown-color: #333333;
+        --nav-dropdown-hover-color: #00FFFF;
+        --nav-dropdown-background-color: #F8FCFF;
+        --nav-mobile-background-color: #FFFFFF;
+        --default-font: "Inter", sans-serif;
+        --heading-font: "Raleway", sans-serif;
+        --nav-font: "Open Sans", sans-serif;
+      }
+    </style>
+
+  <!-- =======================================================
+  * Template Name: Tulernify
+  * Template URL: https://tulernify.com/
+  * Updated: Jul 23 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="appointment-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:Tulernify@gmail.com">Tulernify@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+234 90 6852 8018</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#!" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#!" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#!" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#!" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+   <div class="container">
+            <div class="branding">
+                <a href="index.html" class="logo">
+                    <h1 class="sitename">Tulernify</h1>
+                    <span class="tagline">Education Excellence</span>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <i class="bi bi-house-door"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">
+                                <i class="bi bi-info-circle"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="departments.html" class="nav-link">
+                                <i class="bi bi-book"></i>
+                                <span>Subjects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>Programs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tutors.html" class="nav-link">
+                                <i class="bi bi-people"></i>
+                                <span>Tutors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-cta">
+                            <a href="contact.html" class="nav-link cta-button">
+                                <i class="bi bi-chat-dots"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                        <i class="bi bi-x"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Book a Tutoring Session</h1>
+              <p class="mb-0">
+                Schedule your personalized tutoring session with your preferred tutor. Choose your subject, time, and preferred format (one-on-one or group).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Book Session</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Appointmnet Section -->
+    <section id="appointmnet" class="appointmnet section">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="booking-wrapper">
+              <div class="booking-header text-center">
+                <h2>Schedule Your Tutoring Session</h2>
+                <p>Book your personalized tutoring session in just a few simple steps. Our expert tutors are ready to help you excel in your studies and prepare for your exams.</p>
+              </div>
+
+              <div class="booking-steps">
+                <div class="step">
+                  <div class="step-icon">
+                    <i class="bi bi-book"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Select Subject</h4>
+                    <p>Choose your subject or exam preparation</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-icon">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Pick Date &amp; Time</h4>
+                    <p>Select your preferred tutoring slot</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-icon">
+                    <i class="bi bi-person-check"></i>
+                  </div>
+                  <div class="step-content">
+                    <h4>Confirm Details</h4>
+                    <p>Provide your information and confirm booking</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="appointment-form">
+                <form method="post" class="tutoring-form">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <select name="country" class="form-select" id="countrySelect" required="">
+                        <option value="">Select Country</option>
+                        <option value="+213">Algeria (+213)</option>
+                        <option value="+244">Angola (+244)</option>
+                        <option value="+43">Austria (+43)</option>
+                        <option value="+61">Australia (+61)</option>
+                        <option value="+880">Bangladesh (+880)</option>
+                        <option value="+32">Belgium (+32)</option>
+                        <option value="+229">Benin (+229)</option>
+                        <option value="+267">Botswana (+267)</option>
+                        <option value="+226">Burkina Faso (+226)</option>
+                        <option value="+237">Cameroon (+237)</option>
+                        <option value="+1-613">Canada (+1)</option>
+                        <option value="+86">China (+86)</option>
+                        <option value="+242">Congo (+242)</option>
+                        <option value="+243">Democratic Republic of Congo (+243)</option>
+                        <option value="+20">Egypt (+20)</option>
+                        <option value="+251">Ethiopia (+251)</option>
+                        <option value="+33">France (+33)</option>
+                        <option value="+49">Germany (+49)</option>
+                        <option value="+233">Ghana (+233)</option>
+                        <option value="+91">India (+91)</option>
+                        <option value="+39">Italy (+39)</option>
+                        <option value="+225">Ivory Coast (+225)</option>
+                        <option value="+81">Japan (+81)</option>
+                        <option value="+254">Kenya (+254)</option>
+                        <option value="+231">Liberia (+231)</option>
+                        <option value="+265">Malawi (+265)</option>
+                        <option value="+223">Mali (+223)</option>
+                        <option value="+60">Malaysia (+60)</option>
+                        <option value="+230">Mauritius (+230)</option>
+                        <option value="+212">Morocco (+212)</option>
+                        <option value="+258">Mozambique (+258)</option>
+                        <option value="+264">Namibia (+264)</option>
+                        <option value="+31">Netherlands (+31)</option>
+                        <option value="+64">New Zealand (+64)</option>
+                        <option value="+227">Niger (+227)</option>
+                        <option value="+234">Nigeria (+234)</option>
+                        <option value="+47">Norway (+47)</option>
+                        <option value="+92">Pakistan (+92)</option>
+                        <option value="+250">Rwanda (+250)</option>
+                        <option value="+221">Senegal (+221)</option>
+                        <option value="+232">Sierra Leone (+232)</option>
+                        <option value="+65">Singapore (+65)</option>
+                        <option value="+27">South Africa (+27)</option>
+                        <option value="+82">South Korea (+82)</option>
+                        <option value="+34">Spain (+34)</option>
+                        <option value="+46">Sweden (+46)</option>
+                        <option value="+41">Switzerland (+41)</option>
+                        <option value="+255">Tanzania (+255)</option>
+                        <option value="+66">Thailand (+66)</option>
+                        <option value="+256">Uganda (+256)</option>
+                        <option value="+44">United Kingdom (+44)</option>
+                        <option value="+1">United States (+1)</option>
+                        <option value="+260">Zambia (+260)</option>
+                        <option value="+263">Zimbabwe (+263)</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="phone" class="form-control" placeholder="Phone Number" required="" pattern="[0-9]+" title="Phone number must contain only numbers">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="student_class" class="form-control" placeholder="Class/Grade" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <select name="age_group" class="form-select" id="ageGroup" required="">
+                        <option value="">Select Age Group</option>
+                        <option value="18-plus">18 Years or Older</option>
+                        <option value="under-18">Under 18 Years</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="date" name="date" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <select name="tutoring_type" class="form-select" required="">
+                        <option value="">Select Tutoring Type</option>
+                        <option value="one-on-one">1 on 1 Tutoring</option>
+                        <option value="online">Online Tutoring</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <select name="tutor" class="form-select" id="tutorSelect" required="">
+                        <option value="">Comfirm your tutor</option>
+                        <option value="marcus-johnson">Marcus Johnson - Math & Physics</option>
+                        <option value="sarah-williams">Sarah Williams - English & Literature</option>
+                        <option value="michael-chen">Michael Chen - Computer Science</option>
+                        <option value="emily-rodriguez">Emily Rodriguez - Biology & Chemistry</option>
+                        <option value="david-thompson">David Thompson - History & Languages</option>
+                        <option value="lisa-anderson">Lisa Anderson - Business & Economics</option>
+                        <option value="robert-martinez">Robert Martinez - Engineering & Mechanics</option>
+                        <option value="jennifer-lee">Jennifer Lee - Visual Arts & Design</option>
+                        <option value="daniel-chen">Daniel Chen - Python Programming</option>
+                        <option value="emma-rodriguez">Emma Rodriguez - History & Social Studies</option>
+                        <option value="michael-thompson">Michael Thompson - Economics & Business</option>
+                        <option value="sophia-martinez">Sophia Martinez - Music Theory</option>
+                      </select>
+                    </div>
+                    <div id="parentInfo" class="col-12" style="display: none;">
+                      <h5 style="margin-bottom: 15px; color: var(--heading-color);">Parent/Guardian Information</h5>
+                      <div class="row gy-4">
+                        <div class="col-md-6">
+                          <input type="text" name="parent_name" class="form-control" placeholder="Parent/Guardian Name">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="email" name="parent_email" class="form-control" placeholder="Parent/Guardian Email">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" name="parent_phone" class="form-control" placeholder="Parent/Guardian Phone Number" pattern="[0-9]+" title="Phone number must contain only numbers">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="4"
+                        placeholder="Tell us about your learning goals or areas you need help with (optional)"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Booking details sent to WhatsApp! Check your messages.</div>
+                      <button type="button" id="bookSessionBtn" class="btn-book">Book Session Now</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="emergency-info">
+                <p><i class="bi bi-lightbulb"></i> Need exam preparation? Our WAEC and JAMB prep specialists are ready to help you achieve excellent results!</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Appointmnet Section -->
+
+  </main>
+
+  <footer id="footer" class="footer-16 footer position-relative">
+
+    <div class="container">
+
+      <div class="footer-main">
+        <div class="row align-items-start">
+
+          <div class="col-lg-5">
+            <div class="brand-section">
+              <a href="index.html" class="logo d-flex align-items-center mb-4">
+                <span class="sitename">Tulernify</span></a>
+
+              <div class="contact-info mt-5">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>123 Creative Boulevard, Design District, NY 10012</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (555) 987-6543</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>hello@designstudio.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="footer-nav-wrapper">
+              <div class="row">
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Studio</h6>
+                    <nav class="footer-nav">
+                      <a href="#!">Our Story</a>
+                      <a href="#!">Design Process</a>
+                      <a href="#!">Portfolio</a>
+                      <a href="#!">Case Studies</a>
+                      <a href="#!">Awards</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Services</h6>
+                    <nav class="footer-nav">
+                      <a href="#!">Brand Identity</a>
+                      <a href="#!">Web Design</a>
+                      <a href="#!">Mobile Apps</a>
+                      <a href="#!">Digital Strategy</a>
+                      <a href="#!">Consultation</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Resources</h6>
+                    <nav class="footer-nav">
+                      <a href="#!">Design Blog</a>
+                      <a href="#!">Style Guide</a>
+                      <a href="#!">Free Assets</a>
+                      <a href="#!">Tutorials</a>
+                      <a href="#!">Inspiration</a>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                  <div class="nav-column">
+                    <h6>Connect</h6>
+                    <nav class="footer-nav">
+                      <a href="#!">Start Project</a>
+                      <a href="#!">Schedule Call</a>
+                      <a href="#!">Join Newsletter</a>
+                      <a href="#!">Follow Updates</a>
+                      <a href="#!">Partnership</a>
+                    </nav>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>© <span class="sitename">Tulernify</span>. All rights reserved.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="legal-links">
+                <a href="#!">Privacy Policy</a>
+                <a href="#!">Terms of Service</a>
+                <a href="#!">Cookie Policy</a>
+                <div class="credits">
+                  <!-- All the links in the footer should remain intact. -->
+                  <p><strong>&copy; Tulernify 2024</strong> - Empowering Students Through Expert Online Tutoring</p>
+                  <p style="font-size: 13px; margin-top: 8px;">Designed & Developed by Tulernify Team | Crafted with passion for educational excellence</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Tutor database with WhatsApp numbers and location
+    const tutorDatabase = {
+      'marcus-johnson': { name: 'Marcus Johnson', whatsapp: '2349068528018', specialty: 'Mathematics & Physics', location: 'New York, USA' },
+      'sarah-williams': { name: 'Sarah Williams', whatsapp: '+1234567891', specialty: 'Biology & Chemistry', location: 'London, UK' },
+      'michael-chen': { name: 'Michael Chen', whatsapp: '+1234567892', specialty: 'English & Mandarin', location: 'Toronto, Canada' },
+      'emily-rodriguez': { name: 'Emily Rodriguez', whatsapp: '+1234567893', specialty: 'JAMB & WAEC Prep', location: 'Lagos, Nigeria' },
+      'david-thompson': { name: 'David Thompson', whatsapp: '+1234567894', specialty: 'History & Economics', location: 'Sydney, Australia' },
+      'lisa-anderson': { name: 'Lisa Anderson', whatsapp: '+1234567895', specialty: 'Literature & Essay Writing', location: 'Chicago, USA' },
+      'robert-martinez': { name: 'Robert Martinez', whatsapp: '+1234567896', specialty: 'IT & Programming', location: 'Silicon Valley, USA' },
+      'jennifer-lee': { name: 'Jennifer Lee', whatsapp: '+1234567897', specialty: 'Visual Arts & Design', location: 'Vancouver, Canada' },
+      'daniel-chen': { name: 'Daniel Chen', whatsapp: '+1234567898', specialty: 'Computer Science & Python', location: 'Singapore' },
+      'emma-rodriguez': { name: 'Emma Rodriguez', whatsapp: '+1234567899', specialty: 'History & Social Studies', location: 'Madrid, Spain' },
+      'michael-thompson': { name: 'Michael Thompson', whatsapp: '+1234567900', specialty: 'Economics & Business', location: 'Frankfurt, Germany' },
+      'sophia-martinez': { name: 'Sophia Martinez', whatsapp: '+1234567901', specialty: 'Music Theory & Performance', location: 'Paris, France' }
+    };
+
+    // Age group toggle for parent information
+    document.getElementById('ageGroup').addEventListener('change', function() {
+      const parentInfo = document.getElementById('parentInfo');
+      const parentFields = parentInfo.querySelectorAll('input');
+      
+      if (this.value === 'under-18') {
+        parentInfo.style.display = 'block';
+        parentFields.forEach(field => field.required = true);
+      } else {
+        parentInfo.style.display = 'none';
+        parentFields.forEach(field => field.required = false);
+      }
+    });
+
+    // Handle WhatsApp booking submission
+    document.getElementById('bookSessionBtn').addEventListener('click', function() {
+      const form = document.querySelector('.tutoring-form');
+      
+      // Validate form
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Get form data
+      const formData = new FormData(form);
+      const tutorId = formData.get('tutor');
+      const tutor = tutorDatabase[tutorId];
+
+      if (!tutor) {
+        alert('Please select a valid tutor');
+        return;
+      }
+
+      // Build booking message
+      const message = `
+*BOOKING REQUEST FROM TULERNIFY*
+
+*Student Information:*
+Name: ${formData.get('name')}
+Email: ${formData.get('email')}
+Phone: ${formData.get('country')} ${formData.get('phone')}
+Class/Grade: ${formData.get('student_class')}
+Age Group: ${formData.get('age_group')}
+
+*Session Details:*
+Preferred Date: ${formData.get('date')}
+Tutoring Type: ${formData.get('tutoring_type')}
+Subject: ${tutor.specialty}
+
+${formData.get('parent_name') ? `*Parent/Guardian Information:*
+Name: ${formData.get('parent_name')}
+Email: ${formData.get('parent_email')}
+Phone: ${formData.get('parent_phone')}
+
+` : ''}*Learning Goals:*
+${formData.get('message') || 'Not specified'}
+
+---
+Please confirm availability and pricing for this booking.
+      `.trim();
+
+      // Remove special characters from WhatsApp number
+      const whatsappNumber = tutor.whatsapp.replace(/[^\d]/g, '');
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      // Show success message
+      const loadingDiv = document.querySelector('.loading');
+      const sentMessageDiv = document.querySelector('.sent-message');
+      loadingDiv.style.display = 'none';
+      sentMessageDiv.style.display = 'block';
+
+      // Open WhatsApp after a short delay
+
+      window.open(whatsappUrl, '_blank');
+      setTimeout(() => {
+        window.location.href = "welcome.html"
+      }, 1200);
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+
